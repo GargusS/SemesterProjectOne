@@ -30,6 +30,7 @@ li {
 /* base styles (not view specific styles) */
 body {
   max-width: 1200px;
+  margin: 0 auto;
   font-family: "Jost", sans-serif;
   color: #000;
   font-weight: 400;
@@ -37,7 +38,6 @@ body {
 
 header {
   background-color: var(--primary);
-  width: 100vw;
   padding-top: 20px;
 }
 
