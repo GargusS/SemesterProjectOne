@@ -152,7 +152,7 @@ section.tick-boxes {
 }
 
 body section.main-content {
-  height:100dvh;
+  height: 100dvh;
   background-color: var(--primary);
 }
 
