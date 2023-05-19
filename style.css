@@ -92,6 +92,11 @@ nav .desktop {
   display: none;
 }
 
+.main-image {
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
 .top-section {
   margin-top: 60px;
   width: 80%;
