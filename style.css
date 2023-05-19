@@ -29,6 +29,7 @@ li {
 
 /* base styles (not view specific styles) */
 body {
+  max-width: 1200px;
   font-family: "Jost", sans-serif;
   color: #000;
   font-weight: 400;
