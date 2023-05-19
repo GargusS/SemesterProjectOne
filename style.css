@@ -3,6 +3,7 @@
   --primary: #aae5ff;
   --secondary: #fff;
 }
+
 /* reset */
 body,
 p,
@@ -13,74 +14,143 @@ li {
   padding: 0;
   text-decoration: none;
 }
+
 li {
   list-style-type: none;
 }
+
 *,
 *::before,
-*::after,
-pre {
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* base styles (not view specific styles) */
-
-/* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
-
 body {
   font-family: "Jost", sans-serif;
   color: #000;
-  font-weight: normal;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  color: #000;
-  font-weight: normal;
-}
-
-/* mobile styles */
-header div.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  font-weight: 400;
 }
 
 header {
   background-color: var(--primary);
+  width: 100vw;
+  padding-top: 20px;
+}
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700;800&display=swap");
+
+h1 {
+  font-size: 40px;
+  line-height: 90%;
+  font-weight: 800;
+}
+
+/* Link States */
+a {
+  color: #000;
+  font-weight: normal;
+}
+a:visited {
+  color: #000;
+  font-weight: normal;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* mobile styles */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  display: flex;
+  width:100%;
+  margin-top: 30px;
+  margin-left: 10px;
+
 }
 
 nav a img {
-  width: 20px;
-}
-
-nav .mobile {
-  display: flex;
-  /* flex-direction: column-reverse; */
-  width: 214px;
+  width: 30px;
+  margin-left: 5px;
 }
 
 nav .desktop {
   display: none;
 }
 
+.top-section {
+  margin-top: 60px;
+  width: 80%;
+  margin: 60px auto 40px 30px;
+  text-align: left;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+div.big-tick img,
+div.red-tick img {
+  width: 80px;
+  padding-left: 10px;
+}
+
+div.big-tick a,
+div.red-tick a {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+div.big-tick h3,
+div.red-tick h3 {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 40px;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+div.red-tick {
+  margin-bottom: 20px;
+}
+
+div.teacher {
+  display: flex;
+  justify-content: end;
+}
+
+div.teacher img {
+  width: 300px;
+}
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
+  /* nav .desktop {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  } */
 }
 /* large tablets & laptop styles */
 @media screen and (min-width: 960px) {
-  nav.icon {
-    display: none;
-  }
+
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
-  nav.icon {
-    display: none;
-  }
+  
 }
