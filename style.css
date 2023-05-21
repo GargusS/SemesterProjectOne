@@ -259,8 +259,8 @@ footer {
 /* large tablets, laptop & desktop styles */
 @media screen and (min-width: 764px) {
   body {
-    background-image: url(./images/desktop-bg.jpg);
-    background-position: center;
+    background-image: url(./images/desktop-bg.png);
+    background-position:top;
     background-repeat: no-repeat;
     background-color: var(--secondary);
   }
