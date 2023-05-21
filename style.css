@@ -69,7 +69,7 @@ a:hover {
 
 /* x-small mobile styles */
 
-@media screen and (max-width: 438px) {
+@media screen and (max-width: 427px) {
   .header-text {
     display: none;
   }
@@ -79,9 +79,7 @@ a:hover {
     margin-right: 20px;
     padding: 0;
   }
-  img.icon {
-    display: none;
-  }
+
   nav.nav-link {
     display: inline-block;
     text-decoration: underline;
@@ -95,7 +93,7 @@ a:hover {
   div.grid {
     display: block;
   }
-  
+
   iframe.visit {
     display: none;
   }
@@ -292,7 +290,8 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: var(--primary);
 }
 
