@@ -280,8 +280,15 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
-input:focus {
+input:focus, textarea:focus {
   border-color: var(--primary);
+}
+
+textarea[name="message"] {
+  width: 100%;
+  height: 100px;
+  font-size: large;
+  border-radius: 5px;
 }
 
 /* Hide tablet, laptop and desktop content */
