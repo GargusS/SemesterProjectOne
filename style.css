@@ -71,7 +71,16 @@ a:hover {
   cursor: pointer;
 }
 
+/* iFrame fix */
+
+@media screen and (max-width: 764px) {
+  iframe.visit {
+    display: none;
+  }
+}
+
 /* x-small mobile styles */
+
 @media screen and (max-width: 420px) {
   div.big-tick > a > img {
     display: none;
@@ -85,7 +94,6 @@ a:hover {
   nav.nav-link {
     display: block;
   }
-
 }
 /* mobile styles */
 .grid {
@@ -263,7 +271,7 @@ footer {
 @media screen and (min-width: 764px) {
   body {
     background-image: url(./images/desktop-bg.png);
-    background-position:top;
+    background-position: top;
     background-repeat: no-repeat;
     background-color: var(--secondary);
   }
@@ -338,7 +346,11 @@ footer {
   div.right-column {
     width: 50%;
     padding: 60px 30px;
-    margin-top: 40px;
+    margin-top: 35px;
+  }
+
+  iframe.visit {
+    border-bottom: 7px solid #000;
   }
 
   /* Hide the mobile content for desktop */
