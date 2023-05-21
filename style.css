@@ -70,8 +70,21 @@ a:hover {
 /* x-small mobile styles */
 
 @media screen and (max-width: 420px) {
-  .header-logo {
+  .header-text {
     display: none;
+  }
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    padding: 0;
+  }
+  img.icon {
+    display: none;
+  }
+  nav.nav-link {
+    display: block;
+    text-decoration: underline;
   }
   div.big-tick > a > img {
     display: none;
