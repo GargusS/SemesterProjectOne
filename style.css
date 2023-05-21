@@ -68,6 +68,22 @@ a:hover {
   cursor: pointer;
 }
 
+/* x-small mobile styles */
+@media screen and (max-width: 420px) {
+  div.big-tick > a > img {
+    display: none;
+  }
+  div.red-tick > a > img {
+    display: none;
+  }
+  div.grid {
+    display: block;
+  }
+  nav.nav-link {
+    display: block;
+  }
+
+}
 /* mobile styles */
 .grid {
   display: grid;
@@ -231,8 +247,17 @@ ul {
   -moz-columns: 50px 4;
 }
 
-/* small tablet styles */
-@media screen and (min-width: 765px) {
+/* Hide tablet, laptop and desktop content */
+section.top-section-desktop,
+.middle-section-desktop {
+  display: none;
+}
+footer {
+  display: none;
+}
+
+/* large tablets, laptop & desktop styles */
+@media screen and (min-width: 764px) {
   body {
     background-image: url(./images/desktop-bg.jpg);
     background-position: center;
@@ -268,15 +293,68 @@ ul {
     display: none;
   }
 
+  .picture-desktop {
+    border: 10px solid #000;
+  }
+  /* Content management styles */
+  section.top-section-desktop {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-evenly;
+  }
+  section.top-section-desktop p {
+    font-size: 24px;
+    font-weight: 700;
+    width: 550px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+  }
+  section.middle-section-desktop {
+    display: flex;
+    /* gap: 60px; */
+    /* width: 100%; */
+    padding-top: 50px;
+  }
+  section.middle-section-desktop p {
+    margin-bottom: 20px;
+  }
+  div.left-column {
+    width: 50%;
+    padding: 60px 30px;
+  }
+  div.right-column {
+    width: 50%;
+    padding: 60px 30px;
+    margin-top: 40px;
+  }
+
+  /* Hide the mobile content for desktop */
   section.mobile-content {
     display: none;
   }
-}
+  /* Footer*/
+  footer.desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
+    height: auto;
+    background-color: var(--primary);
+  }
 
-/* large tablets & laptop styles */
-@media screen and (min-width: 1000px) {
-}
-
-/* desktop styles */
-@media screen and (min-width: 1200px) {
+  footer div.footer-left {
+    /* padding-left: 20px; */
+    align-self: center;
+  }
+  footer a.footer-email {
+    font-weight: 700;
+  }
+  footer div.footer-middle {
+    align-self: center;
+  }
+  footer div.footer-right {
+    text-align: center;
+    align-self: center;
+    width: 300px;
+  }
 }
