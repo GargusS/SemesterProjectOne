@@ -74,6 +74,9 @@ a:hover {
 /* x-small mobile styles */
 
 @media screen and (max-width: 420px) {
+  .header-logo {
+    display: none;
+  }
   div.big-tick > a > img {
     display: none;
   }
@@ -275,7 +278,8 @@ footer {
     border-bottom: 6px solid #000;
   }
   .grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
   }
   .header-text {
     margin-top: 30px;
@@ -310,7 +314,7 @@ footer {
   /* Content management styles */
   section.top-section-desktop {
     display: flex;
-    padding-top: 50px;
+    padding: 50px 30px;
     justify-content: space-evenly;
   }
   section.top-section-desktop p {
@@ -359,6 +363,7 @@ footer {
 
   img.flex-display-image {
     border: 10px solid #000;
+    max-height: 379px;
   }
 
   iframe.visit {
