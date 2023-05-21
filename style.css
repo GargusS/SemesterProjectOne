@@ -225,17 +225,30 @@ body section.main-content-article div {
   width: 80%;
   margin: 0 auto;
 }
-/* 
-section.main-content h2 {
 
-}
- */
 section.main-content-article h3 {
   padding: 5px 0;
 }
 
 section.main-content-article p {
   padding-bottom: 30px;
+}
+
+section.flex-display-articles {
+  display: flex;
+  padding: 60px;
+}
+
+section.flex-display-articles:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+div.flex-display-text {
+  padding: 30px;
+}
+
+img.flex-display-image {
+  border: 10px solid #000;
 }
 
 .map {
