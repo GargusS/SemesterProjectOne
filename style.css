@@ -82,9 +82,7 @@ a:hover {
   div.grid {
     display: block;
   }
-  nav.nav-link {
-    display: block;
-  }
+  
   iframe.visit {
     display: none;
   }
