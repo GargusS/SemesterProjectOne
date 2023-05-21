@@ -83,7 +83,7 @@ a:hover {
     display: none;
   }
   nav.nav-link {
-    display: block;
+    display: inline-block;
     text-decoration: underline;
   }
   div.big-tick > a > img {
