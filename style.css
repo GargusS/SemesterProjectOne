@@ -29,6 +29,9 @@ li {
 
 /* base styles (not view specific styles) */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   font-family: "Jost", sans-serif;
@@ -296,6 +299,11 @@ footer {
   .picture-desktop {
     border: 10px solid #000;
   }
+  .picture-explore {
+    border: 10px solid #000;
+    width: 100%;
+    /* margin-left: 10%; */
+  }
   /* Content management styles */
   section.top-section-desktop {
     display: flex;
@@ -323,6 +331,10 @@ footer {
     width: 50%;
     padding: 60px 30px;
   }
+  div.left-explore {
+    width: 50%;
+    padding: 60px 30px;
+  }
   div.right-column {
     width: 50%;
     padding: 60px 30px;
@@ -337,6 +349,7 @@ footer {
   footer.desktop {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
     padding: 20px 20px 0px 20px;
     height: auto;
     background-color: var(--primary);
